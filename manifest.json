@@ -1,0 +1,20 @@
+
+{
+  "short_name": "RAV4 Pro",
+  "name": "RAV4 Delivery Pro",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/744/744465.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "fullscreen"],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "prefer_related_applications": false
+}

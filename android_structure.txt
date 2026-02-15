@@ -1,0 +1,27 @@
+
+RAV4 Delivery Pro - Android Project Structure
+
+app/
+├── src/
+│   ├── main/
+│   │   ├── AndroidManifest.xml (Permisos: CAMERA, ACCESS_FINE_LOCATION, INTERNET)
+│   │   ├── java/com/rav4/delivery/
+│   │   │   ├── MainActivity.kt (Controlador principal, Compose UI)
+│   │   │   ├── ocr/
+│   │   │   │   └── MLKitAnalyzer.kt (Lógica de Google ML Kit para Point & Go)
+│   │   │   ├── logistics/
+│   │   │   │   └── RouteOptimizer.kt (Cerebro logístico de agrupación)
+│   │   │   ├── performance/
+│   │   │   │   └── GarbageCollector.kt (Módulo de limpieza de RAM post-entrega)
+│   │   │   └── navigation/
+│   │   │       └── MapSwitcher.kt (Lógica de intents para Waze/Google Maps)
+│   │   └── res/
+│   │       ├── drawable/
+│   │       │   └── ic_launcher_foreground.xml (Icono RAV4 2008 estilizado)
+│   │       └── values/
+│   │           └── themes.xml (Dark Mode OLED theme)
+├── build.gradle (Dependencies: mlkit:text-recognition, navigation-compose, coroutines)
+└── gradle.properties
+
+Nota: Para generar el APK compatible, se recomienda compilar este proyecto React como una PWA
+o usar Capacitor/Cordova con los componentes de UI proporcionados en App.tsx.

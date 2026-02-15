@@ -1,0 +1,8 @@
+{
+  "name": "RAV4 Delivery Pro",
+  "description": "High-performance logistics application for delivery drivers featuring AI-powered OCR scanning, route optimization, and multi-GPS integration.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
